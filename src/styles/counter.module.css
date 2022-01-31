@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   color: var(--color-beige-1);
+  font-family: 'Jost', sans-serif;
 }
 
 .number {

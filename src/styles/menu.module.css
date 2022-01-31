@@ -6,7 +6,7 @@
 }
 
 .item {
-  border-bottom: 4px solid var(--color-green-1);
+  border-bottom: 2px solid var(--color-green-1);
   padding-bottom: 1px;
   text-transform: uppercase;
   cursor: pointer;
