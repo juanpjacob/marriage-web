@@ -1,10 +1,10 @@
-.countRow {
+.counter {
   display: flex;
   align-items: center;
   color: var(--color-beige-1);
 }
 
-.countNumber {
+.number {
   font-size: 5rem;
   font-weight: 700;
   margin-right: 1rem;
@@ -12,7 +12,7 @@
   text-align: end;
 }
 
-.countUnit {
+.unit {
   font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;

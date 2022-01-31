@@ -1,7 +1,8 @@
 import useTimeCounter from '../hooks/useTimeCounter';
 
 import Title from './Title';
-import CountRow from './CountRow';
+import Menu from './Menu';
+import Counter from './Counter';
 
 import styles from '../styles/home.module.css';
 
@@ -12,10 +13,13 @@ function Home() {
   return (
     <div className={styles.page}>
       <Title />
-      <CountRow number={days} unit="d" />
-      <CountRow number={hours} unit="h" />
-      <CountRow number={minutes} unit="m" />
-      <CountRow number={seconds} unit="s" />
+      <Menu />
+      <div className={styles.content}>
+        <Counter number={days} unit="d" />
+        <Counter number={hours} unit="h" />
+        <Counter number={minutes} unit="m" />
+        <Counter number={seconds} unit="s" />
+      </div>
     </div>
   );
 }

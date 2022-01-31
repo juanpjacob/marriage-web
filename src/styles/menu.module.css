@@ -1,0 +1,13 @@
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  color: var(--color-green-1);
+}
+
+.item {
+  border-bottom: 4px solid var(--color-green-1);
+  padding-bottom: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
