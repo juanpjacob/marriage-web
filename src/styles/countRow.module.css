@@ -4,10 +4,6 @@
   color: var(--color-beige-1);
 }
 
-.countRow:first-of-type {
-  margin-top: 4rem;
-}
-
 .countNumber {
   font-size: 5rem;
   font-weight: 700;
