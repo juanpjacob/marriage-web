@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  line-height: 1.25;
+}
+
+:root {
+  --color-background: #000000;
+  --color-text: #ffffff;
+  --color-button: #cecece;
+  --color-button-border: #cecece;
+  --color-button-text: #202020;
+
+  --color-green-1: #70885d;
+  --color-green-2: #3c5947;
+  --color-beige-1: #d7bd98;
+  --color-grey-1: #d9d9d9;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  font-size: inherit;
+  font-family: inherit;
+  background-color: var(--color-button);
+  border: 1px solid var(--color-button-border);
+  color: var(--color-button-text);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  width: 100%;
+}
+
+button.option {
+  --color-button: transparent;
+  display: flex;
+  align-items: center;
+}
+
+button.option:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+button.submit {
+  --color-button: green;
+  --color-button-border: green;
+  --color-button-text: #ffffff;
+  margin-top: 1rem;
+}
+
+p.questionText {
+  margin-bottom: 1rem;
+}
+
+div.question {
+  margin: 1rem 0;
+}
+
+span.option {
+  text-align: center;
+  padding: 0 1rem;
+  width: 100%;
+}

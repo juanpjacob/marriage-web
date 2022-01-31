@@ -1,0 +1,11 @@
+.title {
+  display: flex;
+  align-items: center;
+  color: var(--color-grey-1);
+}
+
+.name {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0 0.5rem;
+}
