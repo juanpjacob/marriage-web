@@ -11,7 +11,7 @@ function Home() {
   const { days, hours, minutes, seconds } = useTimeCounter(date);
 
   return (
-    <div className={styles.page}>
+    <>
       <Title />
       <Menu />
       <div className={styles.content}>
@@ -20,7 +20,7 @@ function Home() {
         <Counter number={minutes} unit="m" />
         <Counter number={seconds} unit="s" />
       </div>
-    </div>
+    </>
   );
 }
 
