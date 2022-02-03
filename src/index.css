@@ -6,6 +6,8 @@
 }
 
 :root {
+  --boreder-radius: 4px;
+
   --color-background: #000000;
   --color-text: #ffffff;
   --color-button: #cecece;
@@ -37,30 +39,9 @@ input {
   font-size: inherit;
   font-family: inherit;
   padding: 0.5rem 1rem;
+  border-radius: var(--boreder-radius);
 }
 
 input {
   border: 1px solid var(--color-beige-1);
 }
-
-/* 
-button.submit {
-  --color-button: green;
-  --color-button-border: green;
-  --color-button-text: #ffffff;
-  margin-top: 1rem;
-}
-
-p.questionText {
-  margin-bottom: 1rem;
-}
-
-div.question {
-  margin: 1rem 0;
-}
-
-span.option {
-  text-align: center;
-  padding: 0 1rem;
-  width: 100%;
-} */
