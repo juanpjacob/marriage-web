@@ -6,5 +6,3 @@ const supabase = createClient(
 );
 
 export default supabase;
-
-supabase.from('answers').insert([{ question_1: '' }]);

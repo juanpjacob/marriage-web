@@ -1,15 +1,16 @@
 import Title from './Title';
 import Option from './Option';
 import useConfirmationForm from '../hooks/useConfirmationForm';
+import supabase from '../lib/supabase';
 
 import styles from '../styles/confirmation.module.css';
 
 function Confirmation() {
   const form = useConfirmationForm();
 
-  const submitForm = () => {
+  const submitForm = async () => {
     if (form.isValid()) {
-      console.log(form.data);
+      await supabase.from('confirmations').insert([form.data]);
     } else {
       alert('Por favor, completá todos los campos');
     }
