@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Home from './components/Home';
 import Confirmation from './components/Confirmation';
-import Location from './components/Location';
+import Information from './components/Information';
 
 import './index.css';
 
@@ -13,7 +13,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/location" element={<Location />} />
+        <Route path="/location" element={<Information />} />
         <Route path="/confirmation" element={<Confirmation />} />
       </Routes>
     </BrowserRouter>

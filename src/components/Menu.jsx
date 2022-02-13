@@ -6,10 +6,10 @@ function Menu() {
   return (
     <div className={styles.menu}>
       <span className={styles.item}>
-        <Link to="location">Ubicación</Link>
+        <Link to="/location">Ubicación</Link>
       </span>
       <span className={styles.item}>
-        <Link to="confirmation">Asistencia</Link>
+        <Link to="/confirmation">Asistencia</Link>
       </span>
       <span className={styles.item}>Regalos</span>
     </div>

@@ -1,3 +1,1 @@
-function Invitation() {}
-
-export default Invitation;
+export default function Gifts() {}

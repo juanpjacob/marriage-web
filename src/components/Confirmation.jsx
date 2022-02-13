@@ -1,11 +1,11 @@
-import Title from './Title';
+import Topbar from './Topbar';
 import Option from './Option';
 import useConfirmationForm from '../hooks/useConfirmationForm';
 import supabase from '../lib/supabase';
 
 import styles from '../styles/confirmation.module.css';
 
-function Confirmation() {
+export default function Confirmation() {
   const form = useConfirmationForm();
 
   const submitForm = async () => {
@@ -30,7 +30,7 @@ function Confirmation() {
 
   return (
     <>
-      <Title />
+      <Topbar />
       <div className={styles.form}>
         <div className={styles.row}>
           <p>¿Asistís a la fiesta?</p>
@@ -100,5 +100,3 @@ function Confirmation() {
     </>
   );
 }
-
-export default Confirmation;

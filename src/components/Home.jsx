@@ -1,7 +1,6 @@
 import useTimeCounter from '../hooks/useTimeCounter';
 
-import Title from './Title';
-import Menu from './Menu';
+import Topbar from './Topbar';
 import Counter from './Counter';
 
 import styles from '../styles/home.module.css';
@@ -12,8 +11,7 @@ function Home() {
 
   return (
     <>
-      <Title />
-      <Menu />
+      <Topbar />
       <div className={styles.content}>
         <Counter number={days} unit="d" />
         <Counter number={hours} unit="h" />
