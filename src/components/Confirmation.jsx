@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import Topbar from './Topbar';
 import Option from './Option';
 import useConfirmationForm from '../hooks/useConfirmationForm';
@@ -7,9 +9,11 @@ import styles from '../styles/confirmation.module.css';
 
 export default function Confirmation() {
   const form = useConfirmationForm();
+  const [disabled, setDisabled] = useState(false);
 
   const submitForm = async () => {
     if (form.isValid()) {
+      setDisabled(true);
       const { error } = await supabase
         .from('confirmations')
         .insert([form.data]);
@@ -99,7 +103,11 @@ export default function Confirmation() {
           </div>
         )}
       </div>
-      <button className={styles.submit} onClick={submitForm}>
+      <button
+        disabled={disabled}
+        className={styles.submit}
+        onClick={submitForm}
+      >
         Confirmar
       </button>
     </>
