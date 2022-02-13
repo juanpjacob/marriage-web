@@ -10,7 +10,12 @@ export default function Confirmation() {
 
   const submitForm = async () => {
     if (form.isValid()) {
-      await supabase.from('confirmations').insert([form.data]);
+      const { error } = await supabase
+        .from('confirmations')
+        .insert([form.data]);
+      if (!error) {
+        alert('Listo! Gracias por confirmar tu asistencia!');
+      }
     } else {
       alert('Por favor, completá todos los campos');
     }
