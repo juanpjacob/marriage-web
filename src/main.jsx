@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Confirmation from './components/Confirmation';
 import Information from './components/Information';
+import Gifts from './components/Gifts';
 
 import './index.css';
 
@@ -15,6 +16,7 @@ ReactDOM.render(
         <Route path="/" element={<Home />} />
         <Route path="/location" element={<Information />} />
         <Route path="/confirmation" element={<Confirmation />} />
+        <Route path="/gifts" element={<Gifts />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

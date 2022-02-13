@@ -6,12 +6,14 @@ function Menu() {
   return (
     <div className={styles.menu}>
       <span className={styles.item}>
-        <Link to="/location">Ubicación</Link>
+        <Link to="/location">Info</Link>
       </span>
       <span className={styles.item}>
         <Link to="/confirmation">Asistencia</Link>
       </span>
-      <span className={styles.item}>Regalos</span>
+      <span className={styles.item}>
+        <Link to="/gifts">Regalos</Link>
+      </span>
     </div>
   );
 }
