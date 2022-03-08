@@ -6,7 +6,7 @@ import Counter from './Counter';
 import styles from '../styles/home.module.css';
 
 function Home() {
-  const date = new Date(2022, 3, 9, 19, 30, 0);
+  const date = new Date(2022, 3, 9, 20, 30, 0);
   const { days, hours, minutes, seconds } = useTimeCounter(date);
 
   return (
